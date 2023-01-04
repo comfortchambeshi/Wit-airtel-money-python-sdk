@@ -21,3 +21,17 @@
     client_id = "client_id?"
     client_secret = "client_secret?"
 ```
+
+After configuring the above initiliasation steps, then you are ready to collect and disburse the payments. Follow the below instructions.
+
+### REQUEST PAYMENT CALL
+To collect or request a payment you kindly need to call the following function
+```
+from classes.airtel_pay import AirtelPay
+
+#Request pay
+pay = AirtelPay.pay("ten_digits_phone_number", "amount", "currency_code", "country_code", "transaction_reference")
+print(pay["jsondata"])
+```
+
+

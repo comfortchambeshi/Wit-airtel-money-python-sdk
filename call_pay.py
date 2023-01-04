@@ -6,3 +6,9 @@ from classes.airtel_pay import AirtelPay
 
 #verify = AirtelPay.verify_transaction("random-unique-id440032t")
 #print(verify)
+
+
+#Disburse
+
+#transfer = AirtelPay.transfermoney("airtel_phone", 1)
+#print(transfer)

@@ -45,3 +45,21 @@ print(verify)
 ```
 
 
+### DISBURSE/TRANSFER THE MONEY
+To transfer or disburse money into your mobile money account, follow the below instructions:
+ALERT!!!! This calling does not work without the disbursement pin!!! Follow the first instruction to configure your disbursement pin!
+```
+from classes.airtel_pay import AirtelPay
+
+#Disburse funds
+transfer = AirtelPay.transfermoney("airtel_phone_number", "amount")
+print(transfer)
+```
+
+That's all for this tutorial fam. For personal support/assistance kindly use these details:
+- Phone number: +260968793843
+- Email: witlevels04@gmail.com
+
+Thank you for your time!
+
+

@@ -3,6 +3,7 @@
 ### PROJECT REQUIREMENTS
 - Airtel money developer account
 - Airtel money client_id and secrete_key
+- Airtel money disbursement pin
 - Python 3+
 
 ### First step edit environment_mode, x_country, x_currency, client_id and client_secret values from /classes/airtel_pay.py as shown below:

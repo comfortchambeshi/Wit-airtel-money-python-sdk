@@ -10,10 +10,10 @@ class AirtelPay():
     x_country = "country_code?"
     x_currency = "currency_code?"
     #Check if sandbox or production
-    #Choose either sandbox or production
+    #Choose either stagging or production
     environment_mode = "stagging"
     #pin
-    disbursement_pin = "your disbursement pin?"
+    disbursement_pin = "disbursement_pin?"
 
     #Configure keys
     client_id = "client_id?"
@@ -121,7 +121,7 @@ class AirtelPay():
            return jsondata
     def transfermoney(phone_number, amount):
           #Get pin
-          pin = Pin.get_pin()["pin"]
+          pin = Pin.gen_pin(AirtelPay.disbursement_pin)["pin"]
           #UUID V4 generator
           uuidgen = str(uuid.uuid4().hex[:20])
           url = ""+str(AirtelPay.url_prefix)+"/standard/v1/disbursements/"

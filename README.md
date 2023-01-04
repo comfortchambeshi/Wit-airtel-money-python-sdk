@@ -30,8 +30,18 @@ To collect or request a payment you kindly need to call the following function
 from classes.airtel_pay import AirtelPay
 
 #Request pay
-pay = AirtelPay.pay("ten_digits_phone_number", "amount", "currency_code", "country_code", "transaction_reference")
+pay = AirtelPay.pay("ten_digits_phone_number", "amount", "currency_code", "country_code", "transaction_id")
 print(pay["jsondata"])
+```
+
+### CHECK/VERIFY TRANSACTION CALL
+To check the transaction status or verify, follow the below instructions:
+```
+from classes.airtel_pay import AirtelPay
+
+#Verify/check transaction status
+verify = AirtelPay.verify_transaction("transaction_id")
+print(verify)
 ```
 
 

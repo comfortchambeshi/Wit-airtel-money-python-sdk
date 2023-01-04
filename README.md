@@ -1,7 +1,7 @@
 # Wit Airtel money developer python SDK
 
 ### PROJECT REQUIREMENTS
-- Airtel money developer account
+- Airtel money developer account: https://developers.airtel.africa/user/signup
 - Airtel money client_id and secrete_key
 - Airtel money disbursement pin
 - Python 3+

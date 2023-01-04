@@ -1,4 +1,4 @@
-# Wit-airtel-money-python-sdk
+# Wit Airtel money devloper python SDK
 
 ### PROJECT REQUIREMENTS
 - Airtel money developer account
